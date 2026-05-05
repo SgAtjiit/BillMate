@@ -1,8 +1,8 @@
 package com.billing.system;
 
-import com.billing.system.repository.CSVCustomerRepository;
-import com.billing.system.repository.CSVInvoiceRepository;
-import com.billing.system.repository.CSVProductRepository;
+import com.billing.system.repository.SQLiteCustomerRepository;
+import com.billing.system.repository.SQLiteInvoiceRepository;
+import com.billing.system.repository.SQLiteProductRepository;
 import com.billing.system.service.InvoiceCalculator;
 import com.billing.system.service.InvoiceService;
 import com.billing.system.strategy.TextInvoiceExporter;
@@ -12,9 +12,9 @@ import javax.swing.SwingUtilities;
 public class Main {
     public static void main(String[] args) {
         // Initialize dependencies
-        CSVProductRepository productRepo = new CSVProductRepository();
-        CSVCustomerRepository customerRepo = new CSVCustomerRepository();
-        CSVInvoiceRepository invoiceRepo = new CSVInvoiceRepository();
+        SQLiteProductRepository productRepo = new SQLiteProductRepository();
+        SQLiteCustomerRepository customerRepo = new SQLiteCustomerRepository();
+        SQLiteInvoiceRepository invoiceRepo = new SQLiteInvoiceRepository();
 
         InvoiceCalculator calculator = new InvoiceCalculator();
         TextInvoiceExporter exporter = new TextInvoiceExporter();

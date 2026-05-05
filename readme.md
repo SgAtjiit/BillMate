@@ -56,7 +56,16 @@ lib/
 bin/
   ...             # Compiled classes
 run.bat           # Windows build & run script
+data/             # SQLite database file created at runtime
 ```
+
+---
+
+## Storage
+
+The app now stores data in a local SQLite database at `data/billing.db`.
+
+On first run, the app imports the existing `customers.csv`, `products.csv`, and `invoices.csv` files into SQLite so your current data is preserved.
 
 ---
 
