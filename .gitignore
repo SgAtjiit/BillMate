@@ -1,0 +1,18 @@
+# Compiled class files
+bin/
+*.class
+
+# Build & temporary files
+sources.txt
+*.log
+
+# Local Database & generated outputs
+data/*.db
+data/*.csv
+generated_invoices/*.pdf
+
+# IDE & OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store

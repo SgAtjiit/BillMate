@@ -15,7 +15,7 @@ public class MainFrame extends JFrame {
             Repository<Customer> customerRepo,
             Repository<Invoice> invoiceRepo,
             InvoiceService invoiceService) {
-        setTitle("Online Billing And Inventory Management System");
+        setTitle("BillMate - Offline Billing & Inventory Management System");
         setSize(1400, 900);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
